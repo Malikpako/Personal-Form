@@ -29,34 +29,23 @@
    
     
     
-        <form action="/action_page.php">
+        <form method="post" action="calc.php">
   First name:
   <input type="text" name="firstname" value="">
   <br>
   Last name:
   <input type="text" name="lastname" value="">
   <br>
-  Birth Date:
-   <select>
-  <option value="">Date</option>
-  
-  
-  
-  <option value="30">30</option>;
-  
-  }
- 
-</select>
-  
-   <select>
-  <option value="Male">Month</option>
-  <option value="saab">Jan</option>
-  
-</select>
-  
-   <select>
-  <option value="Male">Year</option>
-  <option value="saab">Jan</option>
+  Gender:
+    <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+  <tr>
+                    <td>Birthday</td>
+                    <td> <input type="date" name="bday" size="35" required><br>
+                    </td>
+                </tr>
   
 
   <br><br>
@@ -64,10 +53,7 @@
 
 
         
-   Gender
-   <select>
-</select>
-       
+
             Mobile No.: <input type="number" name="FirstName" value=""><br>
             e.mail: <input type="text" name="LastName" value=""><br>
 
@@ -76,12 +62,7 @@
             Place Of Birth: <input type="text" name="PlaceOfBirth" value=""><br>
         
 
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male"><br>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female"><br>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other"><br><br>
+        
         <input type="submit" value="Submit">
 
 </form>
